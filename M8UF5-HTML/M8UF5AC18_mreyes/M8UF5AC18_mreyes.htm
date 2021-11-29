@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcutredora</title>
+    </head>
+    <body>
+        <div align="center">
+            <form name="calculadora">
+            <h1>CALCUTREDORA</h1>
+            <table style="text-align: center; background: white; border-color: black; width: 10px;" border="1" >
+                <tr>
+                    <td colspan="4"><input type="textfield" name="ans" value=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/1.PNG" width="10px" input type="button" value="1" onClick="document.calculadora.ans.value+='1'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/2.PNG" width="10px" input type="button" value="2" onClick="document.calculadora.ans.value+='2'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/3.PNG" width="10px" input type="button" value="3" onClick="document.calculadora.ans.value+='3'" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="button" value="+" onClick="document.calculadora.ans.value+='+'" style="background: white;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/4.PNG" width="10px" input type="button" value="4" onClick="document.calculadora.ans.value+='4'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/5.PNG" width="10px" input type="button" value="5" onClick="document.calculadora.ans.value+='5'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/6.PNG" width="10px" input type="button" value="6" onClick="document.calculadora.ans.value+='6'" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="button" value="-" onClick="document.calculadora.ans.value+='-'" style="background: white;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/7.PNG" width="10px" input type="button" value="7" onClick="document.calculadora.ans.value+='7'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/8.PNG" width="10px" input type="button" value="8" onClick="document.calculadora.ans.value+='8'" style="background: white;">
+                    </td>
+                    <td>
+                        <img src="img/9.PNG" width="10px" input type="button" value="9" onClick="document.calculadora.ans.value+='9'" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="button" value="*" onClick="document.calculadora.ans.value+='*'" style="background: white;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/0.PNG" width="10px" input type="button" value="0" onClick="document.calculadora.ans.value+='0'" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="reset" value="c" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="button" value="/" onClick="document.calculadora.ans.value+='/'" style="background: white;">
+                    </td>
+                    <td>
+                        <input type="button" value="=" onClick="document.calculadora.ans.value=eval(document.calculadora.ans.value)" style="background: white;">
+                    </td>
+                </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>

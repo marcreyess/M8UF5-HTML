@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar(){
+                var psswd=document.getElementById("psswd").value;
+                var confpsswd=document.getElementById("confpsswd").value;
+                if(psswd==confpsswd){
+                    return true;
+                }
+                else{
+
+                    alert("No coincideix");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+        <form action="mailto:marc.reyes@inslapineda.cat" method="get">
+        <table style="background-color: rgb(239, 239, 239)">
+            <tr style="background-color: rgb(48, 96, 144);">
+                <td border="20" width="600"><h2 style="color: white;">Enviar missatge <img align="right" src="img/gb_reload_s.gif" alt=""></h2></td>
+            </tr>
+            <tr style="background-image: url(img/bg_blue-whitem.gif);">
+                <td><p>Nom:&nbsp;<input type="text" maxlength="8" required></p></td>
+            </tr>
+            <tr>
+                <td><p>E-Mail:&nbsp;<input type="email" required></p></td>
+            </tr>
+            <tr>
+                <td><p>Arxiu:&nbsp;<input type="file"></p></td>
+            </tr>
+            <tr>
+                <td><p>Imatge:&nbsp;<input type="file"></p></td><br>
+            </tr>
+            <tr>
+                <td><h6 align="center">El tamany de l'imatge no pot accedir els 4KBytes</h6></td>
+            </tr>
+            <tr>
+                <td><p>Usuari:&nbsp;<input type="text" maxlength="8" required></p></td>
+            </tr>
+            <tr>
+                <td><p>Contrasenya:&nbsp;<input type="password" id="psswd" required></p></td>
+            </tr>
+            <tr>
+                <td><p>Repetició de la contrasenya:&nbsp;<form action="" onsubmit="return validar();"><input type="password" id="confpsswd" required></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Quins jocs t'interessen?</p>
+                    <input type="checkbox" id="cbox1"><label for="cbox1">FIFA 22</label><br>
+                    <input type="checkbox" id="cbox2"><label for="cbox2">NBA 2K22</label><br>
+                    <input type="checkbox" id="cbox3"><label for="cbox3">League Of Legends</label><br>
+                    <input type="checkbox" id="cbox4"><label for="cbox4">Valorant</label>
+                </td>
+            </tr>
+            <tr>
+                <td><h5 align="center">Requereixo resposta: <input type="radio" name="resposta" id="" value="Sí">Sí<input type="radio" name="resposta" id="" value="No">No</h5></td>
+            </tr>
+            <tr>
+                <td><div align="center"><p>Missatge</p> 
+                    <textarea name="descripcio" id="" cols="45" rows="5"></textarea></div>
+                </td>
+            </tr>
+            <tr><td><br><br></td></tr>
+            <tr>
+                <td><div align="center"><input type="submit" name="enviar" value="Enviar"><input type="reset" value="Borrar"></div></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+
+</html>

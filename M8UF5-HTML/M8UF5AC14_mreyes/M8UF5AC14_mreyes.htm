@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari 1 d'enregistrament</title>
+    </head>
+    <body>
+        <h1>Formulari bàsic de registre</h1>
+        <form action="" method="get">
+            <p>Nom: <input type="text" name="nom" id="" maxlength="50"></p>
+            <p>Cognom: <input type="text" name="cognom" id="" maxlength="50"></p>
+            <p>Sexe: <input type="radio" name="sex" id="" value="home">Home<input type="radio" name="sex" id="" value="dona">Dona</p>
+            <p>Correu electrònic: <input type="text" name="correu" id=""></p>
+            <p>Vull rebre informació sobre novetats i ofertes <input type="checkbox" name="rebre informació" id="" checked></p>
+            <p>Declaro haver llegit i acceptar les condicions generals del programa i la normativa sobre protecció de dades indicada al RGPD <input type="checkbox" name="RGPD" id=""></p>
+            <p>Població: 
+                <select name="poblacio" id="">
+                    <option value="Arbúcies" name="Arbúcies">Arbúcies</option>
+                    <option value="Badalona" name="Badalona">Badalona</option>
+                    <option value="Barcelona" name="Barcelona">Barcelona</option>
+                    <option value="Girona" name="Girona">Girona</option>
+                    <option value="Vilassar de Mar" name="Vilassar de Mar">Vilassar de Mar</option>
+                </select></p>
+            <p>Descripció:</p> 
+                <textarea name="descripcio" id="" cols="50" rows="10"></textarea>
+            <p><a href=""><input type="submit" name="enviar" value="Enviar"></a></p>
+        </form>
+    </body>
+</html>
